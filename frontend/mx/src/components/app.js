@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import Header from 'common/components/header';
-import Modal from 'common/containers/modal';
+import { Header, ModalContainer as Modal } from 'common';
 import DeviceDashboard from './device-dashboard';
 import Footer from '../containers/footer';
 import SetRule from '../containers/set-rule';

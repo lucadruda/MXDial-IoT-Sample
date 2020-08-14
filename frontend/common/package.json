@@ -1,7 +1,17 @@
 {
   "name": "common",
   "version": "0.0.1",
+  "main": "dist/index.js",
   "dependencies": {
     "cross-env": "5.1.3"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.10.5",
+    "@babel/core": "^7.11.1",
+    "@babel/plugin-proposal-class-properties": "^7.10.4"
+  },
+  "scripts": {
+    "build": "babel src --out-dir dist --copy-files",
+    "postinstall": "npm run build"
   }
 }

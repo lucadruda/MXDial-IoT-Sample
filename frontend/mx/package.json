@@ -3,6 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "devDependencies": {
+    "@babel/cli": "^7.10.5",
+    "@babel/plugin-proposal-class-properties": "^7.10.4",
+    "@babel/plugin-transform-react-jsx": "^7.10.4",
     "react-scripts": "facebook/create-react-app:next"
   },
   "dependencies": {
@@ -26,7 +29,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
-    "copyfiles": "copyfiles -u 1 build/**/*"
+    "copyfiles": "copyfiles -u 1 build/**/*",
+    "libTranspile": "babel --plugins @babel/transform-react-jsx ../common --out-dir ../common --copy-files"
   },
   "browserslist": {
     "development": [

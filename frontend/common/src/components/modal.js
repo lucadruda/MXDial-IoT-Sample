@@ -68,23 +68,28 @@ const Styled = styled.section`
   }
 `;
 
-const ModalComponent = ({ className, children, isVisible, onCancel }) => {
+const ModalComponent = ({
+  className,
+  children,
+  isVisible,
+  onCancel
+}) => {
   const classes = classNames('modal', className, {
-    visible: isVisible,
+    visible: isVisible
   });
-
-  return (
-    <Styled className={classes}>
-      <div className="modal">
-        <div className="container">
-          <button className="icon-close" onClick={onCancel}>
-            <img src={iconClose} alt="Close modal" />
-          </button>
-          {children}
-        </div>
-      </div>
-    </Styled>
-  );
+  return /*#__PURE__*/React.createElement(Styled, {
+    className: classes
+  }, /*#__PURE__*/React.createElement("div", {
+    className: "modal"
+  }, /*#__PURE__*/React.createElement("div", {
+    className: "container"
+  }, /*#__PURE__*/React.createElement("button", {
+    className: "icon-close",
+    onClick: onCancel
+  }, /*#__PURE__*/React.createElement("img", {
+    src: iconClose,
+    alt: "Close modal"
+  })), children)));
 };
 
 export default ModalComponent;

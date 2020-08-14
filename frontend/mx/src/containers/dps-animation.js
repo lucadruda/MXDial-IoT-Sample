@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
-import StyledButton from 'common/components/styled/button';
+import {StyledButton} from 'common';
 import introAnimation from '../videos/dps_animation.mp4';
 
 const INTRO_DELAY = 500; // milliseconds

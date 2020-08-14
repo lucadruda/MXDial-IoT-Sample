@@ -1,6 +1,6 @@
 import React from 'react';
 import DashboardGauge from './dashboard-gauge';
-import AccelerometerIcon from 'common/icons/accelerometer';
+import {Accelerometer as AccelerometerIcon} from 'common';
 
 const Accelerometer = ({ acceleration }) => {
   const roundedAcceleration = acceleration.toFixed(2);

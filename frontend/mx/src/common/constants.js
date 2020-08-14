@@ -1,4 +1,4 @@
-import AccelerometerIcon from 'common/icons/accelerometer';
+import {Accelerometer as AccelerometerIcon} from 'common';
 import HumidityIcon from '../icons/humidity';
 import MagnetometerIcon from '../icons/magnetism';
 import PressureIcon from '../icons/pressure';

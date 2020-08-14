@@ -1,9 +1,7 @@
 import React, { Component } from 'react';
 import classNames from 'classnames';
 import styled from 'styled-components';
-import Modal from 'common/containers/modal';
-import ResetApp from 'common/components/reset-app';
-import StyledButton from 'common/components/styled/button';
+import { ModalContainer as Modal, ResetApp, StyledButton } from 'common';
 import DPSAnimation from './dps-animation';
 
 const ResetAppModal = Modal(ResetApp);

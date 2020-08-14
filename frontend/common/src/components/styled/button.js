@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-
 const StyledButton = styled.button`
   color: #02a3ee;
   border-style: solid;
@@ -51,5 +50,4 @@ const StyledButton = styled.button`
     opacity: 0;
   }
 `;
-
 export default StyledButton;

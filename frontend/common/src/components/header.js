@@ -21,11 +21,13 @@ const Styled = styled.div`
   }
 `;
 
-const Header = ({ title }) => (
-  <Styled className="header">
-    <img src={imageLogo} alt='' />
-    <h1>{title}</h1>
-  </Styled>
-);
+const Header = ({
+  title
+}) => /*#__PURE__*/React.createElement(Styled, {
+  className: "header"
+}, /*#__PURE__*/React.createElement("img", {
+  src: imageLogo,
+  alt: ""
+}), /*#__PURE__*/React.createElement("h1", null, title));
 
 export default Header;
