@@ -8,6 +8,7 @@
     "start": "yarn --cwd mxyarn  start",    
     "build-common": "yarn --cwd common build",
     "build-mx": "yarn --cwd mx build",
-    "build":"yarn build-common && yarn build-mx"
+    "build":"yarn build-common && yarn build-mx",
+    "postinstall": "yarn build"
  }
 }
